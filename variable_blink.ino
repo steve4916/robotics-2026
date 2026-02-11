@@ -5,18 +5,16 @@ void setup() {
 }
 
 void loop() {
-
   for (voltage=0; voltage<=250;voltage++){
-  analogWrite(ledred,voltage);
-  analogWrite(ledgreen,250-voltage);
-  Serial.println(voltage);
-  delay(duration);
+    analogWrite(ledred,voltage);
+    analogWrite(ledgreen,250-voltage);
+    Serial.println(voltage);
+    delay(duration);
   }
   for (voltage=250; voltage>=0;voltage--){
-  analogWrite(ledred,voltage);
-  analogWrite(ledgreen,250-voltage);
-  Serial.println(voltage);
-  delay(duration);
+    analogWrite(ledred,voltage);
+    analogWrite(ledgreen,250-voltage);
+    Serial.println(voltage);
+    delay(duration);
   }
-  
 }
